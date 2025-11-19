@@ -36,13 +36,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbGender = new System.Windows.Forms.ComboBox();
+            this.cbProgram = new System.Windows.Forms.ComboBox();
+            this.txtBoxAge = new System.Windows.Forms.TextBox();
+            this.TxtBoxMName = new System.Windows.Forms.TextBox();
+            this.txtBoxFName = new System.Windows.Forms.TextBox();
+            this.txtBoxLName = new System.Windows.Forms.TextBox();
+            this.txtBoxStudId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -128,80 +128,88 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.cbGender);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbProgram);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txtBoxAge);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.TxtBoxMName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtBoxFName);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtBoxLName);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtBoxStudId);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(12, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(791, 253);
             this.panel1.TabIndex = 14;
             // 
-            // comboBox2
+            // cbGender
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(437, 178);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(149, 21);
-            this.comboBox2.TabIndex = 36;
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbGender.Location = new System.Drawing.Point(437, 178);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(149, 21);
+            this.cbGender.TabIndex = 36;
             // 
-            // comboBox1
+            // cbProgram
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(543, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(149, 21);
-            this.comboBox1.TabIndex = 35;
+            this.cbProgram.FormattingEnabled = true;
+            this.cbProgram.Items.AddRange(new object[] {
+            "BS Information Technology",
+            "BS Computer Science",
+            "BS Information Systems",
+            "BS Computer Engineering"});
+            this.cbProgram.Location = new System.Drawing.Point(543, 37);
+            this.cbProgram.Name = "cbProgram";
+            this.cbProgram.Size = new System.Drawing.Size(149, 21);
+            this.cbProgram.TabIndex = 35;
             // 
-            // textBox5
+            // txtBoxAge
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 174);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(158, 25);
-            this.textBox5.TabIndex = 34;
+            this.txtBoxAge.Location = new System.Drawing.Point(147, 174);
+            this.txtBoxAge.Multiline = true;
+            this.txtBoxAge.Name = "txtBoxAge";
+            this.txtBoxAge.Size = new System.Drawing.Size(158, 25);
+            this.txtBoxAge.TabIndex = 34;
             // 
-            // textBox4
+            // TxtBoxMName
             // 
-            this.textBox4.Location = new System.Drawing.Point(510, 96);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 25);
-            this.textBox4.TabIndex = 33;
+            this.TxtBoxMName.Location = new System.Drawing.Point(510, 96);
+            this.TxtBoxMName.Multiline = true;
+            this.TxtBoxMName.Name = "TxtBoxMName";
+            this.TxtBoxMName.Size = new System.Drawing.Size(150, 25);
+            this.TxtBoxMName.TabIndex = 33;
             // 
-            // textBox3
+            // txtBoxFName
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 121);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 25);
-            this.textBox3.TabIndex = 32;
+            this.txtBoxFName.Location = new System.Drawing.Point(156, 121);
+            this.txtBoxFName.Multiline = true;
+            this.txtBoxFName.Name = "txtBoxFName";
+            this.txtBoxFName.Size = new System.Drawing.Size(158, 25);
+            this.txtBoxFName.TabIndex = 32;
             // 
-            // textBox2
+            // txtBoxLName
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 88);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 25);
-            this.textBox2.TabIndex = 31;
+            this.txtBoxLName.Location = new System.Drawing.Point(156, 88);
+            this.txtBoxLName.Multiline = true;
+            this.txtBoxLName.Name = "txtBoxLName";
+            this.txtBoxLName.Size = new System.Drawing.Size(158, 25);
+            this.txtBoxLName.TabIndex = 31;
             // 
-            // textBox1
+            // txtBoxStudId
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 35);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 25);
-            this.textBox1.TabIndex = 30;
+            this.txtBoxStudId.Location = new System.Drawing.Point(168, 35);
+            this.txtBoxStudId.Multiline = true;
+            this.txtBoxStudId.Name = "txtBoxStudId";
+            this.txtBoxStudId.Size = new System.Drawing.Size(231, 25);
+            this.txtBoxStudId.TabIndex = 30;
             // 
             // button1
             // 
@@ -223,6 +231,7 @@
             this.button2.TabIndex = 16;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
@@ -314,13 +323,13 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbGender;
+        private System.Windows.Forms.ComboBox cbProgram;
+        private System.Windows.Forms.TextBox txtBoxAge;
+        private System.Windows.Forms.TextBox TxtBoxMName;
+        private System.Windows.Forms.TextBox txtBoxFName;
+        private System.Windows.Forms.TextBox txtBoxLName;
+        private System.Windows.Forms.TextBox txtBoxStudId;
     }
 }
 
