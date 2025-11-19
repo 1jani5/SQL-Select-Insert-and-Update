@@ -16,14 +16,7 @@ namespace SQL_Select__Insert__and_Update
         private int ID, Age, count;
         private string FirstName, MiddleName, LastName, Gender, Program;
 
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
+        
 
         private void FrmClubRegistration_Load(object sender, EventArgs e)
         {
@@ -53,5 +46,33 @@ namespace SQL_Select__Insert__and_Update
             
     }
 
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClubRegistrationQuery clubRegistrationQuery = new ClubRegistrationQuery();
+            clubRegistrationQuery.RegisterStudent(
+                ID,
+                RegistrationID(),
+                textBox1.Text,
+                textBox2.Text,
+                textBox3.Text,
+                int.Parse(textBox4.Text),
+                comboBox1.Text,
+                textBox5.Text
+                );
+
+            clubRegistrationQuery._FirstName = FirstName;
+            clubRegistrationQuery._MiddleName = MiddleName;
+            clubRegistrationQuery._LastName = LastName;
+            clubRegistrationQuery._Age = Age;
+            clubRegistrationQuery._Gender = Gender;
+            clubRegistrationQuery._Program = Program;
+
+            RefreshListOfClubMembers();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RefreshListOfClubMembers();
+        }
     }
 }
