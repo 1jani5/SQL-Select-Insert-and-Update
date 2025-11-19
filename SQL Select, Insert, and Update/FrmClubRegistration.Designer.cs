@@ -142,6 +142,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -214,6 +215,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmClubRegistration";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmClubRegistration_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

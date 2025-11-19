@@ -35,7 +35,7 @@ namespace SQL_Select__Insert__and_Update
             dataTable = new DataTable();
             bindingSource = new BindingSource();
         }
-        public bool Display()
+        public bool DisplayList()
         {
             try
             {
